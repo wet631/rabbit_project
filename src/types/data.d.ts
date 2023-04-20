@@ -9,5 +9,7 @@ export interface ApiRes<T> {
 export interface CategoryItem {
     id:string,
     name:string,
-    picture:string
+    picture:string,
+    children:CategoryItem[],
+    open:boolean
   }
